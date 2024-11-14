@@ -1,0 +1,8 @@
+Date;Type;Units;Asset;Price;Currency
+01/01/2024;Purchase;1.00;BTC;129.0;EUR
+01/02/2024;Purchase;2.00;BTC;133.0;EUR
+01/03/2024;Purchase;2.00;BTC;150.0;EUR
+15/09/2024;Swap;1.50;BTC;;
+15/09/2024;Swap;600.00;ETH;;
+31/10/2024;Sell;2.00;BTC;178.0;EUR
+15/11/2024;Sell;0.33;BTC;178.0;EUR
