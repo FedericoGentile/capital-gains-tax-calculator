@@ -1,4 +1,4 @@
-Date;Type;Units;Asset;Price;Currency
+Date;Type;Units;Asset;Unit Price;Currency
 01/01/2024 12:30:15;Purchase;1.00;BTC;129.0;EUR
 01/02/2024 12:30:15;Purchase;2.00;BTC;133.0;EUR
 01/03/2024 12:30:15;Purchase;2.00;BTC;150.0;EUR
