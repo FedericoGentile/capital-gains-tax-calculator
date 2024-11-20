@@ -1,0 +1,5 @@
+Date;Type;Units;Asset;Price;Currency
+01/01/2024;Purchase;1.00;BTC;50000;EUR
+15/09/2024;Swap;1;BTC;;
+15/09/2024;Swap;5;ETH;;
+15/11/2024;Sell;2.5;ETH;16000;EUR
