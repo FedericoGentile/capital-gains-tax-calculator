@@ -3,7 +3,6 @@
 
 # %%
 import os
-from datetime import datetime
 
 import numpy as np
 import pandas as pd
@@ -102,7 +101,7 @@ def calculate_units_to_remove_from_purchase_order(
     return units_to_sell, units_to_sell_avg
 
 
-def upldate_balance(df_balance, df_balance_asset, total_units_to_sell, asset_to_sell):
+def update_balance(df_balance, df_balance_asset, total_units_to_sell, asset_to_sell):
     """
     Update the balance of units based on the total units to sell and the temporary balance
     of purchase orders. This function adjusts the units in the original balance DataFrame
@@ -384,7 +383,7 @@ for _, change in change_events.iterrows():
         )
 
         # Update balance swapped asset (out)
-        df_balance_asset_updated, _ = upldate_balance(
+        df_balance_asset_updated, _ = update_balance(
             df_balance_asset,
             df_balance_asset,
             asset_out["Units"].iloc[0],
@@ -459,7 +458,7 @@ for _, change in change_events.iterrows():
                 )
 
                 # Update balance
-                df_balance_asset_updated, tot_units_sold = upldate_balance(
+                df_balance_asset_updated, tot_units_sold = update_balance(
                     df_balance_asset,
                     df_balance_asset,
                     sell["Units"].iloc[0],
