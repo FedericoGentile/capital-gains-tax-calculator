@@ -13,8 +13,8 @@ from plotly.subplots import make_subplots
 # # Parameters
 
 # %%
-PATH_DATA = "../../data/"
-TRANSACTIONS_DATA = "transactions_00.csv"
+PATH_DATA = "data/"
+TRANSACTIONS_DATA = "transactions_01.csv"
 TAX_RATE = 0.275
 METHOD = "ACB"  # ACB, FIFO, LIFO, HIFO
 CURRENCY = "EUR"
@@ -596,6 +596,9 @@ df_tax = (
 
 df_tax
 
+# Save to data
+df_tax.to_csv(os.path.join(PATH_DATA, f"results/results_{METHOD}_{TRANSACTIONS_DATA}"))
+
 # %% [markdown]
 # # Plot
 
@@ -631,3 +634,5 @@ fig.add_trace(
 # Update layout
 fig.update_layout(barmode="stack", title=f"Balance Evolution - {METHOD}")
 fig.show()
+
+# %%
